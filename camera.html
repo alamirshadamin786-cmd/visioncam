@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VisionCam</title>
+    <link rel="stylesheet" href="camera.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <div class="top">
+            <div class="logo">◉</div>
+            <div>
+                <h1>VisionCam</h1>
+                <p>Simple. Private. Yours.</p>
+            </div>
+        </div>
+
+        <section class="hero">
+            <div class="camera-icon">📷</div>
+
+            <h2>Your camera,<br>your control.</h2>
+
+            <p>
+                Open your camera, take a photo,
+                and save it directly to your device.
+            </p>
+
+            <button id="openCamera">
+                Open Camera
+            </button>
+
+            <small>
+                🔒 Camera access requires your permission.
+            </small>
+        </section>
+
+        <section class="camera-box" id="cameraBox">
+
+            <video id="video" autoplay playsinline></video>
+
+            <canvas id="canvas"></canvas>
+
+            <div class="camera-controls">
+
+    <button id="stopCamera" class="icon-btn" aria-label="Close camera">
+        ✕
+    </button>
+
+    <button id="capture" class="shutter-btn" aria-label="Capture photo">
+        <span></span>
+    </button>
+
+    <button id="switchCamera" class="icon-btn" aria-label="Switch camera">
+        🔄
+    </button>
+
+</div>
+</div>
+
+        </section>
+<section class="result" id="result">
+
+    <div class="result-header">
+        <div>
+            <h3>Captured Photo</h3>
+            <p>Your photo is ready.</p>
+        </div>
+    </div>
+
+    <div class="photo-frame">
+        <img id="photo" alt="Captured photo">
+    </div>
+
+    <div class="result-buttons">
+        <button id="retake" class="secondary-btn">
+            🔄 Retake
+        </button>
+
+        <button id="download" class="primary-btn">
+            💾 Save Photo
+        </button>
+    </div>
+
+</section>
+
+        </section>
+
+        <footer>
+            Made with HTML • CSS • JavaScript
+        </footer>
+
+    </main>
+
+    <script src="camera.js"></script>
+
+</body>
+</html>
